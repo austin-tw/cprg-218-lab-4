@@ -1,0 +1,130 @@
+/* ================= Buttons ==========================*/
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #555;
+  color: white;
+}
+/* ================= Hero ==========================*/
+.hero-boxes {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/hero.jpg);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* ================= Content ==========================*/
+.content-container {
+    background-color: aquamarine;
+}
+.content-boxes {
+  display: flex;
+  flex-direction: column;
+  padding: 1em ;
+  justify-content: center;
+  align-items: center;
+}
+img { 
+  width: 49%; 
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%; 
+    height: auto;
+  }  
+}
+/* ================= Accordion ==========================*/
+.accordion-container {
+}
+.accordion-boxes {
+  display: flex;
+  flex-direction: column;
+  padding: 1em ;
+  justify-content: center;
+  align-items: center;
+  background-color: #9999ff;
+  }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: solid #9999ff;
+  transition: 0.4s;
+  font-weight: bold;
+  }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #9999ff;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: "\f078";
+  font-family: 'FontAwesome';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\f077";
+}
+/* ================= Footer ==========================*/
+.footer-container {
+  padding: 1em ;
+  background-color: #e6ffbe;
+  height: auto;
+  position: relative;
+}
+.footer-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  }
+.gmap {
+  padding-bottom: 40%;
+  position: relative;
+}
+.gmap iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+#navlist li {
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
